@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+<!--    <changeSet author="eve" id="create_database">-->
+<!--        <createTable tableName="user">-->
+<!--            <column autoIncrement="true" name="id" type="BIGINT">-->
+<!--                <constraints primaryKey="true"/>-->
+<!--            </column>-->
+<!--            <column name="name" type="VARCHAR(255)"/>-->
+<!--            <column name="email" type="VARCHAR(255)">-->
+<!--                <constraints nullable="false"/>-->
+<!--            </column>-->
+<!--            <column name="password" type="VARCHAR(255)"/>-->
+<!--            <column name="role" type="VARCHAR(255)"/>-->
+<!--        </createTable>-->
+<!--        <createTable tableName="category">-->
+<!--            <column autoIncrement="true" name="id" type="BIGINT">-->
+<!--                <constraints primaryKey="true"/>-->
+<!--            </column>-->
+<!--            <column name="name" type="VARCHAR(255)"/>-->
+<!--        </createTable>-->
+<!--        <createTable tableName="tag">-->
+<!--            <column autoIncrement="true" name="id" type="BIGINT">-->
+<!--                <constraints primaryKey="true"/>-->
+<!--            </column>-->
+<!--            <column name="name" type="VARCHAR(255)"/>-->
+<!--        </createTable>-->
+<!--        <createTable tableName="place">-->
+<!--            <column autoIncrement="true" name="id" type="BIGINT">-->
+<!--                <constraints primaryKey="true"/>-->
+<!--            </column>-->
+<!--            <column name="name" type="VARCHAR(255)"/>-->
+<!--            <column name="address" type="VARCHAR(255)"/>-->
+<!--            <column name="content" type="clob"/>-->
+<!--            <column name="latitude" type="double"/>-->
+<!--            <column name="longitude" type="double"/>-->
+<!--            <column name="user_id" type="BIGINT"/>-->
+<!--        </createTable>-->
+<!--        <addForeignKeyConstraint baseColumnNames="user_id"-->
+<!--                                 baseTableName="place"-->
+<!--                                 constraintName="fk_place_user_id"-->
+<!--                                 referencedColumnNames="id"-->
+<!--                                 referencedTableName="user"/>-->
+<!--        <createTable tableName="post">-->
+<!--            <column autoIncrement="true" name="id" type="BIGINT">-->
+<!--                <constraints primaryKey="true"/>-->
+<!--            </column>-->
+<!--            <column name="title" type="VARCHAR(255)"/>-->
+<!--            <column name="content" type="clob"/>-->
+<!--            <column name="user_id" type="BIGINT"/>-->
+<!--            <column name="longitude" type="double"/>-->
+<!--            <column name="user_id" type="BIGINT"/>-->
+<!--            <column name="category_id" type="BIGINT"/>-->
+<!--            <column name="creation_date" type="timestamp"/>-->
+<!--            <column name="modification_date" type="timestamp"/>-->
+<!--        </createTable>-->
+<!--        <addForeignKeyConstraint baseColumnNames="user_id"-->
+<!--                                 baseTableName="post"-->
+<!--                                 constraintName="fk_post_user_id"-->
+<!--                                 referencedColumnNames="id"-->
+<!--                                 referencedTableName="user"/>-->
+<!--        <addForeignKeyConstraint baseColumnNames="category_id"-->
+<!--                                 baseTableName="post"-->
+<!--                                 constraintName="fk_post_category_id"-->
+<!--                                 referencedColumnNames="id"-->
+<!--                                 referencedTableName="category"/>-->
+
+<!--        <createTable tableName="image">-->
+<!--            <column autoIncrement="true" name="id" type="BIGINT">-->
+<!--                <constraints primaryKey="true"/>-->
+<!--            </column>-->
+<!--            <column name="url" type="VARCHAR(255)"/>-->
+<!--            <column name="post_id" type="BIGINT"/>-->
+<!--        </createTable>-->
+<!--        <addForeignKeyConstraint baseColumnNames="post_id"-->
+<!--                                 baseTableName="image"-->
+<!--                                 constraintName="fk_image_post_id"-->
+<!--                                 referencedColumnNames="id"-->
+<!--                                 referencedTableName="post"/>-->
+<!--        <createTable tableName="tag_post">-->
+<!--            <column autoIncrement="true" name="id" type="BIGINT">-->
+<!--                <constraints primaryKey="true"/>-->
+<!--            </column>-->
+<!--            <column name="post_id" type="BIGINT"/>-->
+<!--            <column name="tag_id" type="BIGINT"/>-->
+<!--        </createTable>-->
+<!--        <addForeignKeyConstraint baseColumnNames="post_id"-->
+<!--                                 baseTableName="tag_post"-->
+<!--                                 constraintName="fk_tag_post_post_id"-->
+<!--                                 referencedColumnNames="id"-->
+<!--                                 referencedTableName="post"/>-->
+<!--        <addForeignKeyConstraint baseColumnNames="tag_id"-->
+<!--                                 baseTableName="tag_post"-->
+<!--                                 constraintName="fk_tag_post_tag_id"-->
+<!--                                 referencedColumnNames="id"-->
+<!--                                 referencedTableName="tag"/>-->
+
+<!--    </changeSet>-->
+</databaseChangeLog>
